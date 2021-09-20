@@ -1,3 +1,22 @@
 .users-list-page {
-    
+    margin: 30px;
+
+    .filter-box {
+        display: flex;
+
+        .search {
+            flex: 4;
+            margin-right: 40px;
+        }
+
+        .sort {
+            flex: 1;
+        }
+    }
+
+    .view-picker {
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 0;
+    }
 }

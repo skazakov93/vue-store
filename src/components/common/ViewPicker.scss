@@ -1,0 +1,13 @@
+.view-picker {
+    .q-icon {
+        color: gray;
+
+        &.selected {
+            color: #000;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

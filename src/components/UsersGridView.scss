@@ -1,0 +1,56 @@
+@import "~sass-mq";
+
+.users-grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .card {
+        display: flex;
+        width: 23%;
+        margin: 1%;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 20px;
+
+        .avatar {
+            margin: 15px 0 0 0;
+            width: 100%;
+
+            img {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+
+        .name {
+            font-weight: 500;
+        }
+
+        .email {
+            margin-bottom: 15px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: 3px solid gray;
+        }
+    }
+}
+
+@include mq($from: tablet, $until: desktop) {
+    .users-grid-view {
+        .card {
+            width: 31%;
+        }
+    }
+}
+
+@include mq($from: mobile, $until: tablet) {
+    .users-grid-view {
+        .card {
+            width: 48%;
+        }
+    }
+}
