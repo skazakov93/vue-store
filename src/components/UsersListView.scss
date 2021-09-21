@@ -1,3 +1,5 @@
+@import "../css/quasar.variables.scss";
+
 .users-list-view {
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +11,7 @@
         align-items: center;
         margin: 5px 0;
         padding: 5px 0;
-        border: 1px solid gray;
+        border: 1px solid $gray;
         border-radius: 20px;
         
         .name {
@@ -24,7 +26,7 @@
 
         &:hover {
             cursor: pointer;
-            border: 3px solid gray;
+            border: 3px solid $gray;
         }
     }
 }

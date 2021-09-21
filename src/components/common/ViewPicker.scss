@@ -1,9 +1,11 @@
+
+@import "../../css/quasar.variables.scss";
 .view-picker {
     .q-icon {
-        color: gray;
+        color: $gray;
 
         &.selected {
-            color: #000;
+            color: $dark;
         }
 
         &:hover {
