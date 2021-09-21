@@ -7,13 +7,13 @@ const routes = [
       {
         path: '',
         component: () => import('src/pages/UsersListPage.vue'),
-        name: 'UsersList'
+        name: 'UsersListPage'
       },
       {
         path: 'user/:userId',
         component: () => import('src/pages/UserDetailsPage.vue'),
         props: true,
-        name: 'UserDetails'
+        name: 'UserDetailsPage'
       }
     ]
   },

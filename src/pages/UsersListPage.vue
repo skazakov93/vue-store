@@ -148,7 +148,7 @@
       },
       onUserClick(userId) {
         this.$router.push({
-          name: 'UserDetails',
+          name: 'UserDetailsPage',
           params: {
             userId: userId
           }
