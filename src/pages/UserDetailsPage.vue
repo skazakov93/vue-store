@@ -58,7 +58,6 @@
         getPrevUser: 'user/getPrevUser'
       }),
       user() {
-        console.log('DDD')
         return this.getUserById(this.userId);
       }
     },

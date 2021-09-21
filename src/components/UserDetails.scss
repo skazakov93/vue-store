@@ -1,3 +1,5 @@
+@import "~sass-mq";
+
 .user-details {
     display: flex;
 
@@ -29,6 +31,27 @@
         .text {
             margin-top: 15px;
             font-size: 14px;
+        }
+    }
+}
+
+@include mq($from: mobile, $until: tablet) {
+    .user-details {
+        flex-direction: column;
+
+        .info {
+    
+            .name {
+                text-align: center;
+            }
+    
+            .email {
+                text-align: center;
+            }
+    
+            .text {
+                text-align: justify;
+            }
         }
     }
 }
